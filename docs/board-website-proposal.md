@@ -35,6 +35,14 @@ The advantages are:
 - The site can be moved to another host later if needed.
 - The website is not locked into Wix.
 
+## Open Source Ownership
+
+The website repository is published under the MIT License, a common free and open source software license.
+
+In practical terms, this means Pomba Branca does not need GameCult's permission to copy the site, move it to another GitHub organisation, give it to another developer, change it, or publish it somewhere else. The fact that the repository may currently live under the GameCult organisation is a hosting and maintenance arrangement, not a lock-in.
+
+Open source here does not mean giving away private information. It means the public website files are available in a way that preserves Pomba Branca's freedom to use and move them.
+
 ## Governance Benefits
 
 This approach is well suited to an organisation that does not want one person making unilateral decisions.

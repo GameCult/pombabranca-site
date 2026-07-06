@@ -16,6 +16,14 @@ This version is a static website:
 - The charity owns the content and the deployment process instead of depending on one website builder.
 - Changes can be reviewed before they go live, which is useful for a group that prefers shared decisions.
 
+## Open Source License
+
+This repository is licensed under the MIT License.
+
+In plain terms, this is free and open source software. Pomba Branca can copy it, move it, change it, publish it somewhere else, or ask someone else to work on it without needing permission from GameCult.
+
+GameCult may currently host and help maintain the repository, but that does not mean GameCult controls the website. The license is intentionally permissive so Pomba Branca can take the site elsewhere whenever it wants.
+
 ## What Is In This Repository
 
 - `PombaBranca/` contains the actual website content: Portuguese pages, English pages, news posts, and images.

@@ -4,3 +4,7 @@ quartz-site/public/
 node_modules/
 tsconfig.tsbuildinfo
 work/
+*.aux
+*.log
+*.out
+*.toc

@@ -1,0 +1,175 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\definecolor{PombaBlue}{RGB}{50,61,255}
+\definecolor{SoftBlue}{RGB}{238,237,255}
+\definecolor{Ink}{RGB}{31,35,50}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=PombaBlue,
+  urlcolor=PombaBlue,
+  pdftitle={Proposal: Move Pomba Branca from Wix to GitHub Pages},
+  pdfauthor={GameCult}
+}
+
+\setlist[itemize]{leftmargin=*,itemsep=0.25em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.25em}
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{plain}
+
+\newcommand{\sectionrule}{\vspace{-0.35em}{\color{PombaBlue}\hrule height 0.8pt}\vspace{0.85em}}
+
+\begin{document}
+
+\begin{center}
+  {\color{PombaBlue}\LARGE\bfseries Proposal: Move Pomba Branca from Wix to a Static Website on GitHub Pages}
+
+  \vspace{0.6em}
+  {\large Board briefing paper}
+
+  \vspace{0.35em}
+  {\small Prepared for Pomba Branca}
+\end{center}
+
+\vspace{1em}
+
+\colorbox{SoftBlue}{
+  \begin{minipage}{0.94\linewidth}
+  \textbf{Recommendation.}
+  Move the public Pomba Branca website from Wix to a static website published with GitHub Pages. Keep the domain at GoDaddy for now, leave email records untouched, and point the website address at GitHub Pages.
+  \end{minipage}
+}
+
+\section*{Summary}
+\sectionrule
+
+Pomba Branca can replace the current Wix website with a modern static website hosted through GitHub Pages.
+
+This means the public website is made from simple files: text pages, images, and design settings. GitHub stores those files, keeps a record of changes, and can publish the finished website online.
+
+For a small charity website, this is a good fit. The site does not need bookings, payments, private member accounts, or a complicated database. It mainly needs clear public information, bilingual support, news updates, contact details, and a stable place to live.
+
+\section*{Why Move Away From Wix?}
+\sectionrule
+
+Wix is useful when someone needs a visual website builder and does not want to touch files. The tradeoff is dependence on Wix:
+
+\begin{itemize}
+  \item The site is tied to Wix's editor and hosting.
+  \item Costs can continue even for a small public-information site.
+  \item Moving away later can be awkward.
+  \item Access depends on knowing who owns the Wix account.
+  \item Design and structure are limited by the platform.
+\end{itemize}
+
+For Pomba Branca, the website is mostly public information. That makes a static site simpler, cheaper, and easier to preserve.
+
+\section*{What GitHub Pages Gives Us}
+\sectionrule
+
+GitHub Pages can host static websites at no hosting cost when the repository is public.
+
+For a charity site, keeping the website code public is usually acceptable because the website content is already public. There is no private client data, payment information, or confidential internal system in the repository.
+
+The advantages are:
+
+\begin{itemize}
+  \item No normal hosting bill for the public website.
+  \item The site files are owned and controlled directly.
+  \item Every change has a history.
+  \item Updates can be reviewed before publication.
+  \item The site can be moved to another host later if needed.
+  \item The website is not locked into Wix.
+\end{itemize}
+
+\section*{Open Source Ownership}
+\sectionrule
+
+The website repository is published under the MIT License, a common free and open source software license.
+
+In practical terms, this means Pomba Branca does not need GameCult's permission to copy the site, move it to another GitHub organisation, give it to another developer, change it, or publish it somewhere else. The fact that the repository may currently live under the GameCult organisation is a hosting and maintenance arrangement, not a lock-in.
+
+Open source here does not mean giving away private information. It means the public website files are available in a way that preserves Pomba Branca's freedom to use and move them.
+
+\section*{Governance Benefits}
+\sectionrule
+
+This approach is well suited to an organisation that does not want one person making unilateral decisions.
+
+Instead of changing a live website directly, changes can be proposed, reviewed, and then published. This gives the board or trusted volunteers a clearer process:
+
+\begin{enumerate}
+  \item Someone proposes a content or design change.
+  \item The change can be reviewed before it goes live.
+  \item The change is approved and merged.
+  \item GitHub publishes the updated website.
+\end{enumerate}
+
+This creates a written record of what changed, when it changed, and who approved it.
+
+\section*{Ongoing Support}
+\sectionrule
+
+GameCult is willing to maintain the website repository for Pomba Branca. This can include fixing issues, making content updates, adding new pages, improving the design, or adding small features as the charity's needs change.
+
+This gives Pomba Branca a practical support path without giving up future control. GameCult can handle the technical maintenance now, and the repository can still be moved to a Pomba Branca GitHub organisation later if the board wants direct ownership.
+
+\section*{Practical Benefits}
+\sectionrule
+
+The new site supports:
+
+\begin{itemize}
+  \item Portuguese and English pages.
+  \item A simple news/microblog feed.
+  \item Static image assets.
+  \item Fast page loading.
+  \item Low maintenance.
+  \item No dependency on Wix hosting.
+  \item Future hosting flexibility.
+\end{itemize}
+
+Because the site is static, there is less that can break. There is no database to maintain and no plugin stack to keep patched.
+
+\section*{Cost Position}
+\sectionrule
+
+The current situation includes paying for a hosted website platform for a small public-information site.
+
+With GitHub Pages, GitHub handles the hosting for a public static site. The main ongoing cost should be the domain name itself, not a separate website hosting subscription.
+
+The domain and email can remain separate. Moving the website does not require moving Google Workspace email.
+
+There is also no need to move the domain away from GoDaddy as part of this project. A different registrar may be cheaper, but transferring the domain is a separate administrative task and not required for the website launch. The practical plan is to keep the domain at GoDaddy and update GoDaddy DNS so \texttt{www.pombabranca.org} points to the GitHub Pages host, currently \texttt{gamecult.github.io}.
+
+If Pomba Branca wants to take direct charge of the repository later, the site can be moved into a Pomba Branca GitHub organisation. That would give the charity direct ownership of the repo and publishing settings. The DNS target would then be updated to the GitHub Pages host for that organisation instead of GameCult's.
+
+\section*{Risks and Mitigations}
+\sectionrule
+
+There is a learning curve. Editing files is different from using Wix. This can be mitigated by having a technical maintainer or volunteer handle publishing, while board members review content in plain language.
+
+GitHub Pages is best for static public sites. If Pomba Branca later needs private accounts, payments, bookings, or a full CRM, those should be handled by dedicated services rather than bolted onto the website.
+
+The repository is public. This is acceptable for public website content, but private documents, private contact lists, or sensitive internal materials should not be stored here.
+
+\section*{Recommendation}
+\sectionrule
+
+Move the public Pomba Branca website from Wix to the static GitHub Pages site.
+
+This gives Pomba Branca more control, reduces avoidable hosting dependence, supports bilingual public communication, and creates a clearer review process for future changes.
+
+The result is a website that is simpler, cheaper to host, easier to preserve, and not locked to a single website-builder platform.
+
+For the domain, keep the current GoDaddy registration for now. The only required DNS change is to point the website address at GitHub Pages while leaving email records untouched. This can point either to GameCult's GitHub Pages host for managed support, or to Pomba Branca's own GitHub organisation if the board wants direct technical ownership.
+
+\end{document}

@@ -53,13 +53,15 @@ These were the domain records observed during the migration work:
 - Registrar: GoDaddy.com, LLC
 - Authoritative DNS: `ns43.domaincontrol.com`, `ns44.domaincontrol.com`
 - Previous web target: `www.pombabranca.org` pointed to Wix through `pointing.wixdns.net`
-- Planned web target: configure GoDaddy DNS so `www.pombabranca.org` CNAMEs to `gamecult.github.io`
+- Planned web target: configure GoDaddy DNS so `www.pombabranca.org` CNAMEs to the GitHub Pages host, currently `gamecult.github.io`
 - Mail: Google Workspace MX records
 - Domain expiry seen in RDAP: 2026-07-29
 
 Do not change the mail records when moving the website. The website and email are separate services.
 
 The registrar can stay with GoDaddy for now. Moving registrars may save some money, but it is not necessary for launching the new website and is not worth adding extra process risk to this migration.
+
+If Pomba Branca later wants direct ownership of the repository and publishing setup, the site can move to a Pomba Branca GitHub organisation instead. In that case the DNS target would change from `gamecult.github.io` to the GitHub Pages host for their own organisation.
 
 ## Local Development
 

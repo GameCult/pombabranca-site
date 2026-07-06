@@ -70,7 +70,9 @@ With GitHub Pages, GitHub handles the hosting for a public static site. The main
 
 The domain and email can remain separate. Moving the website does not require moving Google Workspace email.
 
-There is also no need to move the domain away from GoDaddy as part of this project. A different registrar may be cheaper, but transferring the domain is a separate administrative task and not required for the website launch. The practical plan is to keep the domain at GoDaddy and update GoDaddy DNS so `www.pombabranca.org` points to `gamecult.github.io`.
+There is also no need to move the domain away from GoDaddy as part of this project. A different registrar may be cheaper, but transferring the domain is a separate administrative task and not required for the website launch. The practical plan is to keep the domain at GoDaddy and update GoDaddy DNS so `www.pombabranca.org` points to the GitHub Pages host, currently `gamecult.github.io`.
+
+If Pomba Branca wants to take direct charge of the repository later, the site can be moved into a Pomba Branca GitHub organisation. That would give the charity direct ownership of the repo and publishing settings. The DNS target would then be updated to the GitHub Pages host for that organisation instead of GameCult's.
 
 ## Risks and Mitigations
 
@@ -88,4 +90,4 @@ This gives Pomba Branca more control, reduces avoidable hosting dependence, supp
 
 The result is a website that is simpler, cheaper to host, easier to preserve, and not locked to a single website-builder platform.
 
-For the domain, keep the current GoDaddy registration for now. The only required DNS change is to point the website address at GitHub Pages while leaving email records untouched.
+For the domain, keep the current GoDaddy registration for now. The only required DNS change is to point the website address at GitHub Pages while leaving email records untouched. This can point either to GameCult's GitHub Pages host for managed support, or to Pomba Branca's own GitHub organisation if the board wants direct technical ownership.

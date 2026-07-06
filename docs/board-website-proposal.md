@@ -48,6 +48,12 @@ Instead of changing a live website directly, changes can be proposed, reviewed, 
 
 This creates a written record of what changed, when it changed, and who approved it.
 
+## Ongoing Support
+
+GameCult is willing to maintain the website repository for Pomba Branca. This can include fixing issues, making content updates, adding new pages, improving the design, or adding small features as the charity's needs change.
+
+This gives Pomba Branca a practical support path without giving up future control. GameCult can handle the technical maintenance now, and the repository can still be moved to a Pomba Branca GitHub organisation later if the board wants direct ownership.
+
 ## Practical Benefits
 
 The new site supports:

@@ -1,0 +1,6 @@
+.quartz-build/
+quartz-site/public/
+.npm-cache/
+node_modules/
+tsconfig.tsbuildinfo
+work/
